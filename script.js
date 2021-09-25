@@ -7,7 +7,7 @@ const clearEl = document.getElementById('clear');
 
 const ctx = canvas.getContext('2d');
 
-let size = 20
+let size = 2
 let color = 'black'
 let x 
 let y
@@ -60,7 +60,7 @@ function updateSizeOnScreen() {
 }
 
 increaseBtn.addEventListener('click', () => {
-    size += 5
+    size += 2
 
     if(size > 50) {
         size = 50
@@ -70,7 +70,7 @@ increaseBtn.addEventListener('click', () => {
 })
 
 decreaseBtn.addEventListener('click', () => {
-    size -= 5
+    size -= 2
 
     if(size < 5) {
         size = 5
